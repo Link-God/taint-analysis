@@ -33,7 +33,7 @@ setup(
     install_requires=[],
     entry_points={
         'console_scripts': [
-            'pyt = pyt.__main__:main'
+            'taint_module = taint_module.__main__:main'
         ]
     }
 )

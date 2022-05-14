@@ -32,9 +32,9 @@ class EngineTest(VulnerabilitiesBaseTestCase):
         definitions = parse(
             trigger_word_file=os.path.join(
                 os.getcwd(),
-                'pyt',
+                'taint_module',
                 'vulnerability_definitions',
-                'test_triggers.pyt'
+                'test_triggers.taint_module'
             )
         )
 
@@ -509,9 +509,9 @@ class EngineDjangoTest(VulnerabilitiesBaseTestCase):
         analyse(cfg_list)
 
         trigger_word_file = os.path.join(
-            'pyt',
+            'taint_module',
             'vulnerability_definitions',
-            'django_trigger_words.pyt'
+            'django_trigger_words.taint_module'
         )
 
         return find_vulnerabilities(
@@ -547,9 +547,9 @@ class EngineEveryTest(VulnerabilitiesBaseTestCase):
         analyse(cfg_list)
 
         trigger_word_file = os.path.join(
-            'pyt',
+            'taint_module',
             'vulnerability_definitions',
-            'all_trigger_words.pyt'
+            'all_trigger_words.taint_module'
         )
 
         return find_vulnerabilities(
@@ -573,9 +573,9 @@ class EnginePositionTest(VulnerabilitiesBaseTestCase):
         analyse(cfg_list)
 
         trigger_word_file = os.path.join(
-            'pyt',
+            'taint_module',
             'vulnerability_definitions',
-            'test_positions.pyt'
+            'test_positions.taint_module'
         )
 
         return find_vulnerabilities(

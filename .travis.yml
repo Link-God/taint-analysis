@@ -12,6 +12,6 @@ script:
   - coverage run -m tests
   - flake8 . --count --exclude=examples --max-complexity=11 --max-line-length=127 --show-source --statistics
   - coverage report --include=tests/* --fail-under 100
-  - coverage report --include=pyt/* --fail-under 91
+  - coverage report --include=taint_module/* --fail-under 91
 after_script:
   - codeclimate-test-reporter

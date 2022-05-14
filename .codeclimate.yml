@@ -15,14 +15,14 @@ engines:
         enabled: false
 ratings:
   paths:
-  - "pyt/*"
+  - "taint_module/*"
   - "**.py"
 exclude_paths:
-- "pyt/draw.py"
-- "pyt/github_search.py"
-- "pyt/intraprocedural_cfg.py"
-- "pyt/repo_runner.py"
-- "pyt/save.py"
+- "taint_module/draw.py"
+- "taint_module/github_search.py"
+- "taint_module/intraprocedural_cfg.py"
+- "taint_module/repo_runner.py"
+- "taint_module/save.py"
 - "examples/**"
 - "profiling/**"
 - "tests/**"
@@ -33,7 +33,7 @@ exclude_paths:
 - "**.in"
 - "**.md"
 - "**.png"
-- "**.pyt"
+- "**.taint_module"
 - "**.rst"
 - "**.sh"
 - "**.txt"
